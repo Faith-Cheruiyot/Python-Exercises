@@ -1,0 +1,182 @@
+Questions
+
+PART A (Generics)
+
+What are the following, if it is a data type, state the data type: Eg. 50.6 this is a float
+
+1. #this is some text        -> Comment
+
+2. x = "something"           -> String (I don't understand what you mean here) x is a variable?
+(I don't mean what data type is x but what is x itself)
+
+3. 24                        -> Integer
+
+4. 3.142                     -> Float
+
+5. "jhcbdshjcb"              -> String
+
+6. [2, 3, "st", x, 4.5]      -> List
+
+7. (2, 3, 4)                 -> Tuple
+
+8. {8, 4, 5}                 -> Set
+
+9. {3 : 14, 7 : 71}          -> Dictionary
+
+
+PART B (Specific Data types)
+
+(I) NUMBERS AND CASTING
+x = 153
+y = 3.2
+z = "4.5"
+
+1. What function would I use to find the data types of each variable? type()
+
+2. What data type is x, y & z? Integer, Float, String
+
+3. How do I make each of these data types into a float, int or string? If it is already in that state just write DONE
+|_____|_____Int_______|____Float_____|______String____|
+|_x___|___DONE________|_float()__________|___str()_________|
+|_y___|____int()______|_______DONE_______|___str()__________|
+|_z___|____Error_ ____|________float()___|______DONE__________| 
+
+4. After converting them into these data types, what would be their EXACT values? Write DONE if it is in that state already? 
+(If it is a string, wrap it in double quotation marks so I can differentiate string from int, if it is a float, add the decimal point, and if there is any number that follows, put it there if no number, just put 0 after the decimal point.)
+|_____|_____Int_______|____Float_____|______String____|
+|_x___|____153___________|______153.0_______|___"153"_____________|
+|_y___|_____3__________|_____3.2_________|____"3.2"____________|
+|_z___|_____Value Error_________|___4.5___________|_____"4.5"___________|
+
+5. What is the EXACT result of the following code? If it breaks, say "ERROR" and say why it is an error, and how to fix the error? (EXACT means description in 4)
+a = x + y
+print(a)
+158.2
+b = y + z
+print(b)
+Error
+y=3.2
+z=float("4.5")
+b=y+z
+print(b)
+c = x * y
+print(c)
+489.6
+d = int(str(y))
+print(d)
+Error: int(y) -> I don't know what the goal is here
+e = x/y
+print(e)
+47.8125
+(II) STRINGS
+QUESTION 1
+x = 2025 - 2003
+a = 'The boy said he's here'
+b = "Can we make at least ten thousand?"
+c = 'Hi Ashton, I can code in Python'
+d = "I saw a snake and I exclaimed, "wow!" this is a big snake"
+e = "She spoke to me and said, 'Can this even be done?', then nodded."
+f = 'Why am I even coding this?"
+g = "My age is" + x
+h = c + e
+
+Which of these are valid strings? B,c,f
+
+Which of them is not valid and why? Also, how can we fix them? If it can be fixed in multiple ways, just give one.
+A = forward slash before the single quote
+x= wrap in single/ double quotes
+d=forward slash before the double quotes inside the string
+e=forward slash
+----------------------------------------------------------------------------------------------------------------------------------
+QUESTION 2
+some_txt = '''What's going on here?
+Do you think I am a valid string?
+"I'll let you guess" you can let me know when you resolve it'''
+
+Is some_txt a valid multiline string? If not, why is it not valid and suggest a fix that would make it valid
+No, forward slash before the double quotation marks inside the multiline string.
+
+----------------------------------------------------------------------------------------------------------------------------------
+QUESTION 3
+first_text = "   some books  there"
+second_text = " don't bring tables here"
+
+USING THESE TO SOLVE THE FOLLOWING:
+
+What is the result of:
+length_one = len(first_text) 21
+length_two = len(second_text) 25
+
+
+By slicing or splicing how do I get the following from either first_text or second_text or both(concatenation is allowed):
+Use the reverse silicing in at least on of these.
+"book here" print(b[])
+"sm os hr" print(b[])
+"bring"
+"d"
+
+----------------------------------------------------------------------------------------------------------------------------------
+QUESTION 3
+The following is on String methods. Write the solution of each of the print functions
+a = "Bible"
+x = a.upper()
+print(x) "BIBLE"
+print(a) "Bible"
+
+b = "   some books  there"
+x = b.strip()
+print(x)"some books  there"
+
+c = "valuable"
+x = b.lower()
+print(x) "valuable"
+
+d = "parallelogram"
+x = d.replace("l", "F")
+print(x) "paraFFeFogram"
+
+e = "FINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC STUDY COMBINED WITH THE EXPERIENCE OF YEARS …"
+x = e.count("F") 6
+print(x) #just by the way, most people get 3 the first time, what does Python say though?
+
+f = "She sells seashells at the sea shore"
+x = f.find("s") b
+Which is correct?
+a. x = [0, 4, 8, 10, 13, 18, 27]
+b. x = 0
+c. x = 27
+
+g = "34"
+if isdigit(g):
+   x = int(g) + 24
+print(x) 58
+
+h = "I#am#an#encoded#string"
+x = h.split("#")
+print(x) ['I','am','an','encoded','string']
+----------------------------------------------------------------------------------------------------------------------------------
+QUESTION 4
+In the next section, we will use these variables:
+name = "Faith Chepchumba"
+age = 16
+cash_owned = 100000000000000000
+
+Say x is some string, which when printed by running print(x) we get:
+Hello, my name is Faith Chepchumba
+I am 16 years old.
+I have about 100000000000000000.00 dollars
+
+How would I do this with some python code?
+name = "Faith Chepchumba"
+age = 16
+cash_owned = 100000000000000000
+x = name + " " + age + " " + cash_owned
+print(x)
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+QUESTION 5
+Puzzled by escapes
+How would this look like when printed? i am puzzle,
+sometimes I am easily solved  and I have some symbols like this \ here
+x = "i am  \ba puzzle,\nsometimes I am easily solved\t and I have some symbols like this \\ here"
