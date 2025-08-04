@@ -1,0 +1,39 @@
+No:1 
+Perfect Numbers
+
+A number is perfect if it is equal to the sum of its factors (except itself, but including 1). For example, 28 (with factors 1,2,4,7,14) is perfect because 28 = 1+2+4+7+14. Write a Python program that reads in a number and prints "perfect" if the number is perfect and "not perfect" otherwise. Try to make your program as efficient as possible by reducing the number of tests required.
+
+
+No:2 
+Number Guessing Game
+In this problem you will implement a simple guessing game.
+
+First, the program should choose a secret number x between 1 and 10. Use the randint function in the random module (random.randint()) to pick a random number.
+
+Then, the program should prompt the user to type in a number. If the player guesses x correctly, the program should print a message and terminate.
+
+Otherwise, the program should print a hint and then ask the user for another guess:  
+
+if the difference between x and the guess is greater than 5, the program prints ‘not even close’.
+if the difference between x and the guess is between 2 and 5 (inclusive), the program prints ‘close’.
+if the difference between x and the guess is less than 2, the program prints ‘almost there’.
+The program should repeatedly ask the user for another input until the user guesses correctly or until there were five incorrect guesses. The program should keep track of the number of guesses. If the user cannot guess x in their fifth guess, the program informs her that the game is lost and quits.
+
+Make sure to convert the user input into an int. Use a loop to ask for guesses and print hints repeatedly.
+
+No:3
+Pig Latin is a language game in which words are altered according to certain rules. 
+To make the pig Latin form of an English word, the initial consonant sound is transposed to the end of the word, and an "ay" is affixed. Specifically, there are two rules: 
+
+If a word begins with a vowel, append "yay" to the end of the word. 
+If a word begins with a consonant, remove all the consonants from the beginning up to the first vowel and append them to the end of the word. Finally, append "ay" to the end of the word. The letter "y" counts as a consonant. If there are no vowels, simply append "ay" to the end of the word. 
+For example: 
+
+dog => ogday
+python => onpythay
+scratch => atchscray
+is => isyay
+apple => appleyay
+Write a program that asks the user for an input String word and then prints the pig latin translation of the word. You can assume that the input is always a lower-case string (no input verification is necessary). 
+
+Hints: Use indexing and slicing. You might also want to use a string of vowels and then use the in operator to check if a letter is a vowel.

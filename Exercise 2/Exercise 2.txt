@@ -1,0 +1,210 @@
+Exercise 2
+STRINGS
+x = "something"
+y = "thisbook"
+
+Using slicing/splicing/concatenation how would I return these, use reverse slicing once
+"somebook"
+"koob"
+"smtigtibo"
+"this thing"
+
+5. Check if this multiline String is valid ant if it's not say why
+sentence = '''why's everything this way?
+Does AI's effect play in my role too?
+"What's that got to do with me?", He said.'''
+
+ANS: Valid
+
+use the following code to answer Q6
+name = "John Doe"
+age = 50
+dog_name = "sleepy"
+car_worth = 15000
+
+6. How would I write some string such that when printed will return:
+This is John Doe.
+He's about 50 years old.
+He owns many things, but what he cherishes most are his pet called "sleepy" and his car worth 15000.00 USD.
+
+
+BOOLEANS & OPERATORS
+Use the following variables for Q7 to Q14
+a = []
+b = "test"
+c = (0,)
+d = 1
+e = "0"
+x = [1,5]
+y = [1,5]
+
+What is printed?
+Q7: print(bool(a))
+Q8: print(bool(b))
+Q9: print(bool(c))
+Q10: print(bool(d))
+Q11: print(bool(f))
+Q12: print(x == y)
+Q13: print(x is y)
+Q14: print(len(a) <= c[0])
+
+Use the following variables for Q15 to Q20
+a = 12
+b = 7
+c = 3
+d = "first string"
+e = "another string"
+f = ["list", "one"]
+g = [ 2, "lis"t]
+
+How would I:
+Q15 assign 8 to a variable called var
+Q16 increase the value of b to 10
+Q17 decrease the value of a to 6
+Q18: store a exponent b in a new variable, exp?
+Q19: store a modulo b in a new variable, result?
+Q20: store the quotient of division of b by a in some variable, quo?
+
+a = "this word"
+b = "it's this word"
+
+What will these print?
+Q21: print((len(a) > len(b)) or (b[5:] == a))
+
+Q22: print(not(a == b))
+
+Q23: print(a[5::1] is b[-1:-5])
+
+Q24: print("wr" in a)
+
+Q25:  
+x = 2 ** (4+3) - 8
+x /= 6
+print(x)
+
+
+LISTS
+a = ("item1", "item2", 12, 7.3)
+Q26: 
+How do I use a for loop to create a list from the tuple a and store it in a variable, new_list?
+How would I use the list constructor to do this? 
+
+list1 = [3, 7, 23, 8, 6]
+list2 = [14, 15, 12, 72]
+What will be the result of the following?
+Q27:
+list1[:]
+list1 + list2
+list2[2:4]
+list1[3:4]
+list1[::-1]
+list2[-1::-1]
+list1[3] + list2[3]
+
+Q28:
+x = 2
+list1[x] = 4
+list2[list1[0]] = x
+
+print(list1)
+print(list2)
+
+Q29:
+(Still based on list1 and list2 values from the top, not when mutations are applied either in questions 27 or 28)
+list1.insert(2, 3)
+list2.append(17)
+
+print(list1)
+print(list2)
+
+Q30:
+(Still based on list1 and list2 values from the top, not when mutations are applied, either in questions 27, 28, or 29)
+Which of these won't work and why?
+list1.extend(list2)
+list1.append(list2)
+list1 + list2[3]
+
+Q31:
+Write two ways to remove an item of index i, from list2
+
+Q32:
+list1.sort(reverse = True)
+print(list1)
+
+Q33:
+new_list = [x ** 3 if x < 20 else x for x in list2 if x%3 == 0]
+print(new_list)
+x = new_list.pop()
+print(x)
+
+Q34:
+my_list = ["table", "chair", "couch"]
+furniture = ["table", "chair", "couch"]
+your_list = my_list
+
+print(your_list == my_list)
+print(your_list is furniture)
+
+mylist.append("wardbrobe")
+print(len(my_list) > len(your_list))
+
+your_list.append("bed")
+print(your_list)
+
+TUPLES
+tuple_one = (1, 2, 3)
+tuple_two = (15,)
+Q35: How would I add the number 0 to the tuple, tuple_one?
+
+Q36: print(tuple_one + tuple_two)
+
+Q37: Write some code to print out all the items in tuple_one
+
+SETS
+True or False
+Q38: When I run a for loop over a set and print out the items multiple times, the order will always be the same.
+
+Q39: Anytime I pop an item from a set the last item is popped
+
+Q40: I can use indexing to get an item from a set.
+
+Q41: (still under true or false)
+set_1 = {2,3,4}
+set_1.remove(5)
+This will not print any error  (if it does give an error what method can we use to avoid error, if it doesn't print an error ignore this)
+
+
+What will all the following return
+set1 = {1, 2, 3, 4, 6, 12}
+set2 = {1, 3, 5, 15}
+
+Q42:
+set1.add(1)
+print(set1)
+
+set3  = set1.union(set2)
+print(set3)
+
+what is an alternative to use the union method?
+Follow up, how would I add multiple sets say I have another set called set4?
+
+set3 = set1.intersection(set2)
+print(set3)
+
+set3 = set1.difference(set2
+what is an alternative to use the union method?
+
+set3 = set1 ^ set2
+
+print(set1.issubset(set2))
+
+
+DICTIONARIES
+list1 = [1, 3, 5, 7]
+list2 = ["table", "chair", "bed", "wood"]
+Q43:
+first_dict = {x : x*2 for x in list1}
+print(first_dict)
+
+dict_two = {k : v for k,v in first_dict.items() if k*2 > 6}
+print(dict_two)
