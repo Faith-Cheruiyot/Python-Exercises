@@ -1,7 +1,9 @@
 No:1 
 Perfect Numbers
 
-A number is perfect if it is equal to the sum of its factors (except itself, but including 1). For example, 28 (with factors 1,2,4,7,14) is perfect because 28 = 1+2+4+7+14. Write a Python program that reads in a number and prints "perfect" if the number is perfect and "not perfect" otherwise. Try to make your program as efficient as possible by reducing the number of tests required.
+A number is perfect if it is equal to the sum of its factors (except itself, but including 1). For example, 28 (with factors 1,2,4,7,14) is perfect because 28 = 1+2+4+7+14. 
+Write a Python program that reads in a number and prints "perfect" if the number is perfect and "not perfect" otherwise. 
+Try to make your program as efficient as possible by reducing the number of tests required.
 
 
 No:2 
